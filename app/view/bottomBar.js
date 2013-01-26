@@ -1,5 +1,5 @@
 Ext.define("daemontest.view.bottomBar", {
-    extend: 'Ext.TitleBar',
+    extend: 'Ext.Img',
 	xtype:'daemonBottombar',
     requires: [
         'Ext.Button',
@@ -7,19 +7,7 @@ Ext.define("daemontest.view.bottomBar", {
     ],
     config: { 
 		id:'bottomBar',
-		items: [
-			{
-			id:'favorite',
-            icon:'resources/images/561224.png',
-			iconMask: true,
-            align: 'left'
-        },
-        {
-			id:'camera',
-            icon:'resources/images/561224.png',
-            iconMask: true,
-            align: 'right'
-        }
-		]
+		height:60,
+		src:'resources/images/561224.png'		
     }
 });

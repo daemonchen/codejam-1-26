@@ -4,9 +4,10 @@ Ext.application({
     requires: [
         'Ext.MessageBox'
     ],
-
+	
+	controllers: ["bottomBar"],
     views: ['Main','carousel','topBar','bottomBar'],
-	controllers:['Main','carousel','topBar','bottomBar'],
+	
     icon: {
         '57': 'resources/icons/Icon.png',
         '72': 'resources/icons/Icon~ipad.png',
@@ -26,6 +27,8 @@ Ext.application({
     },
 
     launch: function() {
+		
+		
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
 

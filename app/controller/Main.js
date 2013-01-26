@@ -3,16 +3,11 @@ Ext.define('daemontest.controller.Main', {
 
     config: {
         control: {
-            loginButton: {
-                tap: 'doLogin'
-            },
-            'button[action=logout]': {
-                tap: 'doLogout'
-            }
+            
         },
 
         refs: {
-            loginButton: 'button[action=login]'
+           
         }
     },
 
@@ -22,5 +17,8 @@ Ext.define('daemontest.controller.Main', {
 
     doLogout: function() {
         //called whenever any Button with action=logout is tapped
+    },
+	launch: function(app) {
+      
     }
 });

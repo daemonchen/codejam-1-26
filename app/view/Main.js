@@ -24,6 +24,7 @@ Ext.define("daemontest.view.Main", {
 			{
 				xtype:'daemonBottombar',
 				flex:0,
+				id:'bottomBar',
 				docked:'bottom'
 			}
 		]
